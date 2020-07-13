@@ -38,7 +38,7 @@ head(total)
 hist(total, col = "red", main = "total number of steps made with each day", xlab = "steps", ylab = "Number of days")
 ```
 
-![plot of chunk unnamed-chunk-87](figure/unnamed-chunk-87-1.png)
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
 
 ```r
 summary(total)
@@ -59,7 +59,7 @@ avge_step_by_intvl <-tapply(data$steps,data$interval, mean, na.rm = TRUE, simpli
 plot(intvl, avge_step_by_intvl, type = "l")
 ```
 
-![plot of chunk unnamed-chunk-88](figure/unnamed-chunk-88-1.png)
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
 
 
 The interval that has the maximum average step is the next one:
@@ -115,7 +115,7 @@ summary(total_sin_na)
 hist(total_sin_na, col = "red", main = "total steps by day,without (NA) missing values", xlab = "total steps", ylab = "day")
 ```
 
-![plot of chunk unnamed-chunk-93](figure/unnamed-chunk-93-1.png)
+![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png)
 
 ## (fourth question) Are there differences in activity patterns between weekdays and weekends?
 
@@ -134,7 +134,7 @@ plot(intvl, avge_step_by_intvl_weekend, type = "l",col ="blue", xlab = "", ylab 
 plot(intvl, avge_step_by_intvl_weekday, type = "l",col ="blue", xlab = "interval", ylab = "Number of steps", main = "weekday")
 ```
 
-![plot of chunk unnamed-chunk-94](figure/unnamed-chunk-94-1.png)
+![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png)
 
 
 
